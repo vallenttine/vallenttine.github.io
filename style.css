@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(images/2.png);
+    background-size: 40vh;
+    background-position: right;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center; /* Відцентрування по горизонталі */
+    align-items: center; /* Відцентрування по вертикалі */
+    height: 100dvh; /* Забезпечує, щоб body займало весь видимий екран */
+}
+.content{
+    display: flex;
+    justify-content: center; /* Відцентрування по горизонталі */
+    align-items: center; /* Відцентрування по вертикалі */
+    width: 32vh;
+    height: 28vh;
+    background-color: rgb(234, 221, 205);
+    border-radius: 12%;
+}
+.gif{
+    max-width: 100%;
+    width: 15vh;
+    margin: 10px;
+}
+
+.buttons, .item{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 3px 3px 0 0;
+  color: #422800;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px;
+  padding: 0 18px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: all 0.25s ease;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+.text_child{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
