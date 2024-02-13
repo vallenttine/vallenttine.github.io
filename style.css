@@ -19,7 +19,7 @@ body{
     justify-content: center; /* Відцентрування по горизонталі */
     align-items: center; /* Відцентрування по вертикалі */
     width: 32vh;
-    height: 28vh;
+    height: 29vh;
     background-color: rgb(234, 221, 205);
     border-radius: 12%;
 }
