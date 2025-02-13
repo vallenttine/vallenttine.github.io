@@ -18,14 +18,14 @@ body{
     display: flex;
     justify-content: center; /* Відцентрування по горизонталі */
     align-items: center; /* Відцентрування по вертикалі */
-    width: 32vh;
-    height: 29vh;
+    padding: 10px;
     background-color: rgb(234, 221, 205);
-    border-radius: 12%;
+    border-radius: 30px;
+    min-width: 29vh;
 }
 .gif{
     max-width: 100%;
-    width: 15vh;
+    max-width: 15vh;
     margin: 10px;
 }
 
@@ -68,7 +68,28 @@ body{
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 19px;
     font-style: normal;
     text-align: center;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 3vh;
+  padding: 0 3vw;
+}
+
+.prev2023, .next2026{
+  visibility: hidden;
+}
+
+#timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff4d6d; /* Рожевий колір */
+  text-align: center;
+  margin-top: 10px;
 }

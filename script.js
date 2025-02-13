@@ -86,7 +86,7 @@ yesButton.addEventListener("click", () => {
     textChild.style.fontSize = "20px";
     var gifs = [
         "https://media1.tenor.com/m/jD8fmhulF4MAAAAC/clap-clap-cute-cat.gif",
-        "https://media1.tenor.com/m/VOd9bvqdPqAAAAAC/f.gif",
+        "https://media1.tenor.com/m/J9mOaXMbKygAAAAd/mochi-pet.gif",
         "https://media1.tenor.com/m/UZMDKcNeUj0AAAAC/goma-peach-kisses.gif",
         "https://media1.tenor.com/m/XAabbheOS24AAAAC/goma-happy.gif"
       ];
@@ -100,6 +100,6 @@ yesButton.addEventListener("click", () => {
     }
 
     var intervalId = setInterval(changeGif, interval);
-    gif.style.width = "20vh"
+    gif.style.maxWidth = "20vh"
 })
 
