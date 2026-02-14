@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3579/3579959.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <title>Valentine💘</title>
+</head>
+<body>
+    <div class="nav">
+        <button class="button-74 prev2025" onclick="window.location.href='valentine2025.html'">2025</button>
+        <button class="button-74 next2027">2027</button>
+    </div>
+    <div class="content game-content">
+        <div id="items2026">
+            <!-- Start Menu -->
+            <div id="startMenu">
+                <img class="cat-preview" src="images/cat_sprite_idle.png" alt="cat">
+                <h2 class="text_child game-title">Допоможи котику зібрати всю любов ❤️</h2>
+                <p class="text_child game-subtitle">Лови серденька, уникай розбитих!</p>
+                <label class="timer-toggle text_child">
+                    <input type="checkbox" id="timerCheckbox" checked>
+                    <span>Таймер</span>
+                </label>
+                <p class="text_child game-hint">🎁 З таймером — збери 100 очок!</p>
+                <button class="button-74" id="startBtn">Грати</button>
+            </div>
+
+            <!-- Game Canvas -->
+            <div id="gameArea" style="display:none;">
+                <div id="gameHUD">
+                    <span class="text_child hud-item">❤️ <span id="score">0</span></span>
+                    <span class="text_child hud-item" id="timerHUD">⏱️ <span id="timeLeft">45</span></span>
+                    <span class="text_child hud-item">💔 <span id="misses">0</span>/<span id="maxMisses">10</span></span>
+                </div>
+                <canvas id="gameCanvas"></canvas>
+                <div id="mobileControls">
+                    <button class="mobile-btn" id="leftBtn">◀</button>
+                    <button class="mobile-btn" id="rightBtn">▶</button>
+                </div>
+            </div>
+
+            <!-- End Menu -->
+            <div id="endMenu" style="display:none;">
+                <img class="cat-preview" src="images/cat_sprite_looks_up.png" alt="cat">
+                <h2 class="text_child game-title" id="endTitle">Результат</h2>
+                <p class="text_child game-subtitle" id="endMessage"></p>
+                <p class="text_child game-score" id="endScore"></p>
+                <div class="end-buttons">
+                    <button class="button-74" id="restartBtn">Ще раз</button>
+                    <button class="button-74" id="menuBtn">Меню</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Prize Overlay -->
+    <div id="prizeOverlay" class="prize-overlay" style="display:none;">
+        <div class="prize-hearts-bg" id="prizeHeartsBg"></div>
+        <div class="prize-content" id="prizeContent">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <span class="envelope-heart">💌</span>
+                </div>
+                <p class="text_child envelope-hint">Натисни на конверт</p>
+            </div>
+            <div class="letter" id="letter" style="display:none;">
+                <h2 class="text_child letter-title">Запрошення 💕</h2>
+                <p class="text_child letter-text">Люба кицю, ти зібрала стільки любові! 🥰</p>
+                <p class="text_child letter-text">Запрошую тебе на побачення! 💖</p>
+                <p class="text_child letter-text">Час та місце — за нами 😘</p>
+                <p class="text_child letter-signature">З любов'ю, твоя валентинка ❤️</p>
+                <button class="button-74" id="closeLetter">Закрити</button>
+            </div>
+        </div>
+    </div>
+    <script src="script2026.js"></script>
+</body>
+</html>

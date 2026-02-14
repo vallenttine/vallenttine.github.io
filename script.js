@@ -87,7 +87,7 @@ yesButton.addEventListener("click", () => {
     var gifs = [
         "https://media1.tenor.com/m/jD8fmhulF4MAAAAC/clap-clap-cute-cat.gif",
         "https://media1.tenor.com/m/J9mOaXMbKygAAAAd/mochi-pet.gif",
-        "https://media1.tenor.com/m/UZMDKcNeUj0AAAAC/goma-peach-kisses.gif",
+        "https://media.tenor.com/Z8f8pPoOXPMAAAAj/peach-goma.gif",
         "https://media1.tenor.com/m/XAabbheOS24AAAAC/goma-happy.gif"
       ];
     
